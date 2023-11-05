@@ -62,10 +62,6 @@ export default function HomeScreen() {
             <UploadDocuments text = {'Upload pictures of your plants and get health reports'} icon = {null} count = {2} textBtn={'upload'}/>
             <Image source={require('../assets/HomeScreenImages/diseaseDetection.png')}/>
           </View>
-          <View style = {styles.banner}>
-            <UploadDocuments text = {'Get insights on crop and its yield and other aids'} icon = {null} count = {3} textBtn={'recieve'}/>
-            <Image source={require('../assets/HomeScreenImages/insightsImage.png')}/>
-          </View>
         </View>
         </ScrollView>
       </SafeAreaView>

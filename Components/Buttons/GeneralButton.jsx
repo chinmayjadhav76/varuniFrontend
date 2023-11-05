@@ -3,7 +3,7 @@ import {StyleSheet, View, Text , TouchableOpacity , useWindowDimensions} from "r
 import { COLORS } from "../../constants/theme";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
-export default function GeneralButton({icon, text, color}){
+export default function GeneralButton({icon, text, color, onPress}){
     
     const styles = StyleSheet.create({
         container : {
@@ -24,13 +24,13 @@ export default function GeneralButton({icon, text, color}){
     });
     if(icon === null){
         return(
-            <TouchableOpacity style = {styles.container}>
+            <TouchableOpacity style = {styles.container} onPress={onPress}>
                 <Text style = {styles.text}>{text}</Text>
             </TouchableOpacity>
         )
     }
     return (
-        <TouchableOpacity style = {styles.container}>
+        <TouchableOpacity style = {styles.container} onPress={onPress}>
             <Text style = {styles.text}>{text}</Text>
             <Ionicons name = {icon} size = {16} color = {COLORS.tertiary}/>
         </TouchableOpacity>

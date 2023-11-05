@@ -6,12 +6,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './Screens/HomeScreen';
 import SettingsScreen from './Screens/SettingsScreen';
-import DummyScreen from './Screens/DummyScreen';
 import DocumentScreen from './Screens/DocumentScreen';
 import { COLORS } from './constants/theme';
 import Ionicons from "@expo/vector-icons/Ionicons";
 import CustomTabBar from './CustomeTabBar';
-import CameraScreen from './Screens/CameraScreen';
+import CameraScreen from './Screens/DiseaseDetection';
 
 export default function App() {
   const windowWidth = useWindowDimensions().width;
