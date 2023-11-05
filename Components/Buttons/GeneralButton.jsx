@@ -13,7 +13,8 @@ export default function GeneralButton({icon, text, color}){
             flexDirection: "row",
             justifyContent: "center",
             alignItems: "center",
-            borderRadius : 10
+            borderRadius : 10,
+            gap : 8,
         },
         text : {
             fontSize : 14,
@@ -31,7 +32,7 @@ export default function GeneralButton({icon, text, color}){
     return (
         <TouchableOpacity style = {styles.container}>
             <Text style = {styles.text}>{text}</Text>
-            <Ionicons name = {icon} size = {12} color = {COLORS.tertiary}/>
+            <Ionicons name = {icon} size = {16} color = {COLORS.tertiary}/>
         </TouchableOpacity>
     )
 }

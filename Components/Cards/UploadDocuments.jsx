@@ -17,7 +17,7 @@ export default function UploadDocuments({text , icon, count, textBtn}){
             justifyContent: "space-between",
             alignItems : "center",
             borderRadius : 15,
-            width : windowWidth * 0.7
+            minWidth : windowWidth * 0.7,
         },
         textContainer : {
             maxWidth : "60%",
@@ -28,7 +28,7 @@ export default function UploadDocuments({text , icon, count, textBtn}){
     return(
         <View style = {styles.container}>
             <Text style = {styles.textContainer}>{text}</Text>
-            <GeneralButton text = {textBtn} color = {color}/>
+            <GeneralButton text = {textBtn} color = {color} icon = {icon}/>
         </View>
     )
 }
